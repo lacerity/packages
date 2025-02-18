@@ -14,7 +14,7 @@ const Webhook = require("@lacerity/webhook");
 
 - TypeScript
 ```ts
-import Webhook from "log-webhook";
+import Webhook from "@lacerity/webhook";
 ```
 
 ## Discord or Slack Webhook
