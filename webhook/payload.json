@@ -1,0 +1,81 @@
+{
+    "username": "Webhook",
+    "avatar_url": "https://example.com/avatar.png",
+    "content": "This is a normal message with @everyone mention.",
+    "tts": false,
+    "allowed_mentions": {
+        "parse": [
+            "everyone",
+            "roles",
+            "users"
+        ],
+        "roles": [
+            "123456789012345678"
+        ],
+        "users": [
+            "987654321098765432"
+        ]
+    },
+    "embeds": [
+        {
+            "title": "Error Occurred",
+            "description": "Something went wrong...",
+            "url": "https://example.com",
+            "timestamp": "2024-01-30T12:00:00Z",
+            "color": 16711680,
+            "footer": {
+                "text": "Error Logger",
+                "icon_url": "https://example.com/footer-icon.png"
+            },
+            "image": {
+                "url": "https://example.com/error-image.png"
+            },
+            "thumbnail": {
+                "url": "https://example.com/thumbnail.png"
+            },
+            "video": {
+                "url": "https://example.com/video.mp4"
+            },
+            "author": {
+                "name": "System Bot",
+                "url": "https://example.com",
+                "icon_url": "https://example.com/author-icon.png"
+            },
+            "fields": [
+                {
+                    "name": "Error Code",
+                    "value": "500",
+                    "inline": true
+                },
+                {
+                    "name": "Status",
+                    "value": "Internal Server Error",
+                    "inline": true
+                }
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "id": 0,
+            "filename": "log.txt",
+            "description": "Server logs",
+            "content_type": "text/plain",
+            "url": "https://example.com/log.txt",
+            "size": 1024
+        }
+    ],
+    "components": [
+        {
+            "type": 1,
+            "components": [
+                {
+                    "type": 2,
+                    "style": 5,
+                    "label": "View Logs",
+                    "url": "https://example.com/logs"
+                }
+            ]
+        }
+    ]
+}
